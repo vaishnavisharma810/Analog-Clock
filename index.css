@@ -1,0 +1,42 @@
+#clockcontainer{
+    /* background-color: rosybrown; */
+    height: 40vw; /* vw : view port width : jitna bhi hai uska 40%*/
+    width: 40vw;
+    background: url(clock.jpg) no-repeat;
+    background-size: 100%;
+    /* border: 2px solid red; check krne k lie box kaha pr hai kaha tk */
+    margin: auto; /* Center ho jayga auto krke*/
+    position: relative; /* jisse hour hand iske relative apne ko adjust krle*/
+}
+
+#hour, #minute, #second{
+    position: absolute;
+    background: black;
+    border-radius: 10px;
+
+}
+#hour{
+    width: 0.8%;
+    height: 18%;
+    top: 32.8%;
+    left: 49.4%;
+    transform-origin: bottom; /*Bottom se rotate ho*/
+}
+#minute{
+    width: 0.5%;
+    height: 28%;
+    top: 22.5%;
+    left: 49.4%;
+    opacity: 0.8;
+    transform-origin: bottom; /*Bottom se rotate ho*/
+}
+#second{
+    width: 0.2%;
+    height: 32%;
+    top: 18.5%;
+    left: 49.4%;
+    opacity: 0.8;
+    transform-origin: bottom; /*Bottom se rotate ho*/
+}
+
+    

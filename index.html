@@ -1,0 +1,43 @@
+<!-- 
+    Logic Behind the clock:
+    for HOUR HAND : 
+    1 hour = 360 / 12 = 30 degrees
+    => that means for h hour angle will be 30h degrees.
+    but when time is 08:30 or something else we want our hour hand between two numbers like in this case we neet between 8 and 9,
+    because there will be rotation of few angles due to minute and second hand;
+    then,
+    60 minutes = 30 degrees rotation
+    1 minute = 1/2 degrees rotation
+    => m minutes = (m / 2) degrees rotation
+    Thus, total rotation for h hour = (30h + m/2) ....I formula 
+    (Second hand's rotation is counted as negligible)
+
+    for MINUTE HAND : 
+    60 min = 360 degrees
+    1 min = 360 / 60 = 6 degrees
+    => m minutes = 6m degrees
+    (Second hand's rotation is counted as negligible)
+
+    for SECOND HAND : 
+    60 seconds = 360 degrees
+    1 second = 6 degrees
+    => s seconds = 6s degrees
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analog Clock</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
+</head>
+<body>
+    <div id="clockcontainer">   <!-- Parent Container containing hands-->
+        <div id="hour"></div>
+        <div id="minute"></div>
+        <div id="second"></div>
+    </div>
+</body>
+</html>
